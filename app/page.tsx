@@ -1,36 +1,26 @@
-import Container from "@/components/Container";
-import Navbar from "@/components/Navbar";
-
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
+import SelectedWork from "@/components/sections/SelectedWork";
+import Contact from "@/components/sections/Contact";
 export default function Home() {
   return (
     <>
       <Navbar />
 
-      <main className="bg-[#FAFAFA] text-[#111111]">
-        <Container>
+      <main>
 
-          <section className="flex min-h-screen items-center">
+      <Hero />
 
-            <div>
+      <SelectedWork />
 
-              <h1 className="text-7xl font-semibold tracking-[-0.05em] md:text-8xl">
-                Prudhvi Raju
-              </h1>
+      <Experience />
 
-              <p className="mt-8 text-2xl text-neutral-700">
-                Software Engineer.
-              </p>
+      <About />
 
-              <p className="mt-4 max-w-xl text-lg leading-8 text-neutral-500">
-                Building software that solves real problems through
-                thoughtful engineering.
-              </p>
+      <Contact />
 
-            </div>
-
-          </section>
-
-        </Container>
       </main>
     </>
   );
